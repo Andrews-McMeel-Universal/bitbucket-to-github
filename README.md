@@ -36,7 +36,7 @@ The steps below is how each sequential repository gets processed individually.
 1. `cd repositories/ && mkdir archive-client_admin && cd archive-client_admin/`
 2. `git clone --mirror https://bitbucket.com/amu_technology/archive-client_admin.git`
 3. `cd archive-client_admin.git`
-4. `git push --mirror https://abarrows:3fb89505c765f7a8818aeaeb0e356c8e4af2b1f7@github.com/abarrows/archive-client_admin.git`
+4. `git push --mirror https://abarrows:$GITHUB_TOKEN@github.com/abarrows/archive-client_admin.git`
 
 5. OPTIONAL CLEANUP:`cd ../../ && rm -rf archive-client_admin`
 
@@ -44,7 +44,7 @@ The steps below is how each sequential repository gets processed individually.
 
 1. `git clone --mirror https://bitbucket.com/amu_technology/repository-to-mirror.git`
 2. `cd repository-to-mirror.git`
-3. `git remote set-url --push origin https://github.com/abarrows/mirrored`
+3. `git remote set-url --push origin https://github.com/Andrews-McMeel-Universal/mirrored`
 4. `git fetch -p origin`
 5. `git push --mirror`
 
